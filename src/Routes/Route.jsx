@@ -2,8 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
-import Apartment from "../Pages/Apartment/Apartment";
-import Login from "../Pages/Login/Login";
+ import Login from "../Pages/Login/Login";
 import Dashboard from "../Layout/Dashboard";
 import Cart from "../Pages/Dashboard/Cart";
 import AllUsers from "../Pages/AllUsers/AllUsers";
@@ -28,14 +27,7 @@ import Contact from "../Contact/Contact";
                 path: '/',
                 element: <Home></Home>
             },
-            {
-                path: '/apartment',
-                element: <Apartment></Apartment>,
-                 loader:()=> fetch('http://localhost:3000/apartmentCount') 
-
-                // loader: ()=> fetch('http://localhost:3000/apartments')
-
-            },
+            
             {
                 path: 'contact',
                 element: <Contact></Contact>
