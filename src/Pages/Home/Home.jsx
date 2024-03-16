@@ -1,10 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import About from "../About/About";
 import Banner from "../Banner/Banner";
- import Location from "./Location";
-import Faq from "../../FAQ/FAQ";
-import Contact from "../../Contact/Contact";
+  import Contact from "../../Contact/Contact";
  import Features from "../Features/Features";
+import Team from "../Team/Team";
 
 const Home = () => {
   return (
@@ -16,9 +15,8 @@ const Home = () => {
         <Banner></Banner>
         <Features></Features>
          <About></About>
-        <Location></Location>
-        <Faq></Faq>
-        <Contact></Contact>
+         <Team></Team>
+         <Contact></Contact>
       </div>
     </div>
   );
